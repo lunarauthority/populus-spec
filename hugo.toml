@@ -1,0 +1,54 @@
+baseURL = "https://spec.infra.populus.social"
+languageCode = "en"
+title = "Populus Specification"
+theme = "hextra"
+
+enableRobotsTXT = true
+enableGitInfo = true
+
+[params]
+  description = "Product, platform and strategy documentation for the Populus platform"
+
+  [params.search]
+    enable = true
+    type = "flexsearch"
+
+  [params.footer]
+    enable = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[[menu.main]]
+  identifier = "strategy"
+  name = "Strategy"
+  pageRef = "/strategy"
+  weight = 1
+
+[[menu.main]]
+  identifier = "platform"
+  name = "Platform"
+  pageRef = "/platform"
+  weight = 2
+
+[[menu.main]]
+  identifier = "populus"
+  name = "Populus"
+  pageRef = "/populus"
+  weight = 3
+
+[[menu.main]]
+  identifier = "populus-services"
+  name = "Services"
+  pageRef = "/populus-services"
+  weight = 4
+
+[[menu.main]]
+  identifier = "company"
+  name = "Company"
+  pageRef = "/company"
+  weight = 5
